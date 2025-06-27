@@ -4,15 +4,6 @@ from typing import List, Optional
 
 class Solution:
     def twoOutOfThree(self, nums1: List[int], nums2: List[int], nums3: List[int]) -> List[int]:
-        # out_list = list()
-        # all_ele_set = set(nums1 + nums2 + nums3)
-        # for ele in all_ele_set:
-        #     if (ele in nums1 and ele in nums2) or (ele in nums1 and ele in nums3) or (ele in nums2 and ele in nums3):
-        #         out_list.append(ele)
-        # return out_list
-        # n1_n2_set = set(nums1 and nums2)
-        # n1_n3_set = set(nums1 and nums3)
-        # n2_n3_set = set(nums2 and nums3)
         n1_n2_set = list(set(nums1) & set(nums2))
         n1_n3_set = list(set(nums1) & set(nums3))
         n2_n3_set = list(set(nums2) & set(nums3))
